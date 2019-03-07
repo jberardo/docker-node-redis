@@ -1,8 +1,12 @@
 version: '3'
-service:
+services:
   redis-server:
     image: 'redis'
-  node-redis:
+  node-redis1:
     build: .
     ports:
       - "7001:8081"
+  node-redis2:
+    build: .
+    ports:
+      - "7002:8081"
